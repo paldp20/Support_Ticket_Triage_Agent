@@ -55,6 +55,7 @@ def extract_ticket_fields(description: str) -> Dict[str, str]:
             """
 
     raw = call_llm(prompt)
+    raw = raw.strip()
 
     # try parsing as JSON safely
     try:
@@ -109,4 +110,5 @@ def triage_ticket(description: str) -> Dict[str, Any]:
         "kb_matches": kb_matches,
         "next_action": next_action
     }
+
 
