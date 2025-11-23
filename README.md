@@ -84,7 +84,7 @@ Triage response
 
 ---
 
-# ▶Running the Project Locally
+# Running the Project Locally
 
 ## Start Ollama
 
@@ -234,4 +234,5 @@ The API is now available at:
 - Backend is containerized fully
 
 > Note: VSCode is used for this project by me.
+
 
