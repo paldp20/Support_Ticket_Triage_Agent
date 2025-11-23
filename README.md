@@ -58,19 +58,25 @@ This repository contains:
 Streamlit UI (app.py)
 
 |
+
 |  HTTP POST /triage
+
 v
 
 FastAPI (main.py)
 
 |
+
 |  calls
+
 v
 
 Agent (agent.py)
 
 |
+
 |
+
 v
 
 Triage response
@@ -228,3 +234,4 @@ The API is now available at:
 - Backend is containerized fully
 
 > Note: VSCode is used for this project by me.
+
