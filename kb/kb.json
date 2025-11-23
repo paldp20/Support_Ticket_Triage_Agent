@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ISSUE-101",
+        "title": "Checkout returning 500 error on mobile browsers",
+        "category": "Bug",
+        "symptoms": ["500 error", "checkout", "mobile", "payment failure"],
+        "recommended_action": "Escalate to payments team; reference incident INC-2024-09-10"
+    },
+    {
+        "id": "ISSUE-102",
+        "title": "Users unable to reset password via email link",
+        "category": "Login",
+        "symptoms": ["password reset", "email link", "reset not working"],
+        "recommended_action": "Check email service logs; send manual reset link"
+    },
+    {
+        "id": "ISSUE-103",
+        "title": "Slow page load times on dashboard",
+        "category": "Performance",
+        "symptoms": ["slow loading", "dashboard", "performance"],
+        "recommended_action": "Collect performance logs; check backend latency spikes"
+    },
+    {
+        "id": "ISSUE-104",
+        "title": "Subscription renewal failing for some users",
+        "category": "Billing",
+        "symptoms": ["subscription", "renewal", "payment failure"],
+        "recommended_action": "Ask user for failed payment ID; verify with billing provider"
+    },
+    {
+        "id": "ISSUE-105",
+        "title": "API responses intermittently returning 429 rate limit errors",
+        "category": "API",
+        "symptoms": ["429", "rate limit", "API", "too many requests"],
+        "recommended_action": "Inform customer to reduce request frequency; check rate-limit config"
+    },
+    {
+        "id": "ISSUE-106",
+        "title": "User avatars not updating after upload",
+        "category": "Bug",
+        "symptoms": ["avatar", "image upload", "profile picture", "not updating"],
+        "recommended_action": "Clear CDN cache for user; verify file upload service"
+    },
+    {
+        "id": "ISSUE-107",
+        "title": "Unable to log in using Google OAuth",
+        "category": "Login",
+        "symptoms": ["Google login", "OAuth", "login failure"],
+        "recommended_action": "Check OAuth callback logs; verify Google Cloud credentials"
+    },
+    {
+        "id": "ISSUE-108",
+        "title": "High error rates on bulk data import",
+        "category": "Performance",
+        "symptoms": ["data import", "bulk upload", "errors"],
+        "recommended_action": "Request sample CSV; escalate to data ingestion service team"
+    },
+    {
+        "id": "ISSUE-109",
+        "title": "Billing invoice not generated for new accounts",
+        "category": "Billing",
+        "symptoms": ["invoice", "billing", "new account"],
+        "recommended_action": "Verify billing job scheduler; manually trigger invoice run"
+    },
+    {
+        "id": "ISSUE-110",
+        "title": "FAQ: How to enable two-factor authentication",
+        "category": "How-To",
+        "symptoms": ["2fa", "two-factor", "enable security"],
+        "recommended_action": "Send user the 2FA setup guide"
+    },
+    {
+        "id": "ISSUE-111",
+        "title": "FAQ: How to export account data",
+        "category": "How-To",
+        "symptoms": ["export data", "download", "account export"],
+        "recommended_action": "Provide instructions for account export from settings"
+    },
+    {
+        "id": "ISSUE-112",
+        "title": "Emails not being delivered to certain domains",
+        "category": "Bug",
+        "symptoms": ["email not delivered", "email bouncing", "domain issue"],
+        "recommended_action": "Check SMTP logs; verify domain reputation and DKIM"
+    },
+    {
+    "id": "ISSUE-113",
+    "title": "Intermittent logout due to expired session tokens",
+    "category": "Bug",
+    "symptoms": ["auto logout", "session expired", "token invalid", "random logout"],
+    "recommended_action": "Check session TTL configuration; ask user for approximate logout timestamps"
+    },
+    {
+    "id": "ISSUE-114",
+    "title": "Corrupted or unreadable attachments uploaded by customers",
+    "category": "Bug",
+    "symptoms": ["attachment not opening", "file corrupted", "upload issue", "invalid file"],
+    "recommended_action": "Request user to reupload file; verify file-processing pipeline logs"
+    }
+]
