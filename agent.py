@@ -87,7 +87,7 @@ def triage_ticket(description: str) -> Dict[str, Any]:
     # KB search
     kb_matches = search_kb(description, top_k=3)
     best_score = kb_matches[0]["score"] if kb_matches else 0.0
-    is_known_issue = best_score > 0.50
+    is_known_issue = best_score > 0.30
 
     # next action logic
     if is_known_issue:
@@ -109,3 +109,4 @@ def triage_ticket(description: str) -> Dict[str, Any]:
         "kb_matches": kb_matches,
         "next_action": next_action
     }
+
