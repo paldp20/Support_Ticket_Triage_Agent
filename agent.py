@@ -110,5 +110,3 @@ def triage_ticket(description: str) -> Dict[str, Any]:
         "kb_matches": kb_matches,
         "next_action": next_action
     }
-
-
