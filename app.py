@@ -3,7 +3,7 @@
 import streamlit as st
 import requests
 
-api = "http://localhost:8000/triage"   # FastAPI endpoint
+api = "http://localhost:8000/triage"   # FastAPI endpoint, to use .env in real deployment for this
 
 st.title("Vikara Support Ticket Triage Agent")
 
@@ -24,3 +24,4 @@ if st.button("Submit"):
                 st.error(f"API error: {response.text}")
         except Exception as e:
             st.error(f"Connection error: {e}")
+
