@@ -21,7 +21,7 @@ with open(kb_path, "r", encoding="utf-8") as f:
     kb = json.load(f)
 
 # build embeddings for KB 
-texts = [f"{item['title']} {' '.join(item['symptoms'])}" for item in kb]
+texts = [f"{item['title']} {' '.join(item['symptoms'])}" for item in kb] #can add category too for better accuracy
 
 if use_transformer:
     emb = model.encode(texts, convert_to_numpy=True)
@@ -52,3 +52,4 @@ def search_kb(query: str, top_k: int = 5) -> List[Dict]:
     )
 
     return ranked[:top_k]
+
