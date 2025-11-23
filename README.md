@@ -191,6 +191,7 @@ The Dockerfile runs the FastAPI backend.
 ```bash
 docker build -t <folder-name> .
 ```
+> Note: This will take time as sentence-transformers require installations of torch, transformers and other model files. This can be avoided by just using TF-IDF for vectorization or install CPU-only torch: `RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu`
 
 ## Run container
 ```bash
@@ -234,5 +235,6 @@ The API is now available at:
 - Backend is containerized fully
 
 > Note: VSCode is used for this project by me.
+
 
 
